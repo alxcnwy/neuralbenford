@@ -6,3 +6,21 @@ From the [Wikipedia page](https://en.wikipedia.org/wiki/Benford%27s_law), Benfor
 
 ![Benford's Law Distribution](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Rozklad_benforda.svg/768px-Rozklad_benforda.svg.png)
 
+## Initial Results
+
+### First layer leading digit distribution vs. Benford's Law
+Before Training
+![Before training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/before_layer1.png?raw=true)
+After Convergence
+![After training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/after_layer1.png?raw=true)
+
+### All layers leading digit distribution vs. Benford's Law
+Before Training
+![Before training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/before_layers.png?raw=true)
+After Convergence
+![After training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/after_layers.png?raw=true)
+
+## Next steps
+- [ ] Perform goodness-of-fit distribution tests 
+- [ ] Evaluate a range of different architectures
+- [ ] Compare different weight initializations 
