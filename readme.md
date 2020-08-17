@@ -3,6 +3,8 @@ This repository contains a Jupyter notebook that investigates whether the leadin
 
 Inspired by [this Reddit thread](https://www.reddit.com/r/learnmachinelearning/comments/ibesos/the_weights_of_my_first_hidden_layer_start_to/).
 
+An interesting possible direction of research is how the leading digit distribution of weights at a point in time can be used as a measure for the network's fit without reference to a validation set.
+
 ## Benford's Law
 From the [Wikipedia page](https://en.wikipedia.org/wiki/Benford%27s_law), Benford's Law "states that in many naturally occurring collections of numbers, the leading significant digit is likely to be small. For example, in sets that obey the law, the number 1 appears as the leading significant digit about 30% of the time, while 9 appears as the leading significant digit less than 5% of the time. If the digits were distributed uniformly, they would each occur about 11.1% of the time."
 
@@ -26,3 +28,4 @@ After Convergence
 - [ ] Perform goodness-of-fit distribution tests 
 - [ ] Evaluate a range of different architectures
 - [ ] Compare different weight initializations 
+- [ ] Investigate using weights vs. Benford distribution deviation as a measure of network fit
