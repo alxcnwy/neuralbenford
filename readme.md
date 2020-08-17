@@ -10,7 +10,12 @@ From the [Wikipedia page](https://en.wikipedia.org/wiki/Benford%27s_law), Benfor
 
 ![Benford's Law Distribution](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Rozklad_benforda.svg/768px-Rozklad_benforda.svg.png)
 
-## Initial Results
+Here's a [great Numberphile video](https://www.youtube.com/watch?v=XXjlR2OK1kM) talking about Benford's Law.
+
+## Initial Experimental Results
+I compared the leading weight digit distribution before and after training convergence of a convolutional neural network architecture adapted from the [Keras documentation](https://keras.io/examples/vision/mnist_convnet/). I compared the distribution both of the first layer and all layers in the network. 
+
+The leading digit was calculated by ignoring the weight sign and taking the first non-zero digit in the weight value.
 
 ### First layer leading digit distribution vs. Benford's Law
 Before Training
@@ -25,6 +30,7 @@ After Convergence
 ![After training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/after_layers.png?raw=true)
 
 ## Next steps
+- [ ] Plot mean deviance over time as the network is trained
 - [ ] Perform goodness-of-fit distribution tests 
 - [ ] Evaluate a range of different architectures
 - [ ] Compare different weight initializations 
