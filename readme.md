@@ -1,5 +1,9 @@
 # Neural Benford
-This repository contains a Jupyter notebook that investigates whether the leading digit of a trained neural network obeys Benford's law.
+Benford's law is a fascinating property of many naturally occuring numbers that the leading digit distribution follows a non-uniform skewed distribution. The Fibonacci numbers and the factorials obey Benford's law and it can be used for fraud detection in finance.
+
+This repository contains a Jupyter notebook investigating whether the leading digits of weights in a neural network follow Benford's Law.
+
+It appears that the weights of a network do not follow Benford's Law before training but do approximately follow Benford's Law after convergence...
 
 Inspired by [this Reddit thread](https://www.reddit.com/r/learnmachinelearning/comments/ibesos/the_weights_of_my_first_hidden_layer_start_to/).
 
@@ -12,8 +16,9 @@ From the [Wikipedia page](https://en.wikipedia.org/wiki/Benford%27s_law), Benfor
 
 Here's a [great Numberphile video](https://www.youtube.com/watch?v=XXjlR2OK1kM) talking about Benford's Law.
 
+
 ## Initial Experimental Results
-I compared the leading weight digit distribution before and after training convergence of a convolutional neural network architecture adapted from the [Keras documentation](https://keras.io/examples/vision/mnist_convnet/). I compared the distribution both of the first layer and all layers in the network. 
+I compared the leading weight digit distribution before and after training convergence of a convolutional neural network architecture adapted from the [Keras documentation](https://keras.io/examples/vision/mnist_convnet/). I compared the distributions of weights in just the first layer and all layers in the network. 
 
 The leading digit was calculated by ignoring the weight sign and taking the first non-zero digit in the weight value.
 
@@ -25,9 +30,11 @@ The leading digit was calculated by ignoring the weight sign and taking the firs
 ![Before training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/before_layers.png?raw=true)
 ![After training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/after_layers.png?raw=true)
 
+
 ## Next steps
 - [ ] Plot mean deviance over time as the network is trained
 - [ ] Perform goodness-of-fit distribution tests 
 - [ ] Evaluate a range of different architectures
 - [ ] Compare different weight initializations 
 - [ ] Investigate using weights vs. Benford distribution deviation as a measure of network fit
+
