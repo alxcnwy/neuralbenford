@@ -9,6 +9,8 @@ Inspired by [this Reddit thread](https://www.reddit.com/r/learnmachinelearning/c
 
 An interesting possible direction of research is how the leading digit distribution of weights at a point in time can be used as a measure for the network's fit without reference to a validation set.
 
+![Neural Benford](https://github.com/alxcnwy/neuralbenford/blob/master/plots/benford.gif?raw=true)
+
 ## Benford's Law
 From the [Wikipedia page](https://en.wikipedia.org/wiki/Benford%27s_law), Benford's Law "states that in many naturally occurring collections of numbers, the leading significant digit is likely to be small. For example, in sets that obey the law, the number 1 appears as the leading significant digit about 30% of the time, while 9 appears as the leading significant digit less than 5% of the time. If the digits were distributed uniformly, they would each occur about 11.1% of the time."
 
@@ -24,17 +26,17 @@ The leading digit was calculated by ignoring the weight sign and taking the firs
 
 #### First layer leading digit distribution vs. Benford's Law
 
-![Before training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/before_layer1.png?raw=true)
+![Before training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/before_layer1.jpg?raw=true)
 
-![After training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/after_layer1.png?raw=true)
+![After training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/after_layer1.jpg?raw=true)
 
 ___
 
 #### All layers leading digit distribution vs. Benford's Law
 
-![Before training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/before_layers.png?raw=true)
+![Before training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/before_layers.jpg?raw=true)
 
-![After training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/after_layers.png?raw=true)
+![After training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/after_layers.jpg?raw=true)
 
 
 ## Next steps
