@@ -3,13 +3,14 @@ Benford's law is a fascinating property of many naturally occuring numbers that 
 
 This repository contains a Jupyter notebook investigating whether the leading digits of weights in a neural network follow Benford's Law.
 
-It appears that the weights of a network do not follow Benford's Law before training but do approximately follow Benford's Law after convergence...
-
-Inspired by [this Reddit thread](https://www.reddit.com/r/learnmachinelearning/comments/ibesos/the_weights_of_my_first_hidden_layer_start_to/).
-
-An interesting possible direction of research is how the leading digit distribution of weights at a point in time can be used as a measure for the network's fit without reference to a validation set.
+It appears that the weights of a network do not follow Benford's Law before training but do approximately follow Benford's Law after convergence and then deviate from Benford's Law when the model starts overfitting.
 
 ![Neural Benford](https://github.com/alxcnwy/neuralbenford/blob/master/plots/benford.gif?raw=true)
+
+A surprising result is that it appears that model Validation Accuracy is maximised around the time when the leading digit MAD vs. Benford's Law is minimized! This needs to be confirmed on more datasets / architectures...
+
+![Accuracy vs. Benford Weight MAD](https://github.com/alxcnwy/neuralbenford/blob/master/plots/accuracy_vs_mad.png?raw=true)
+
 
 ## Benford's Law
 From the [Wikipedia page](https://en.wikipedia.org/wiki/Benford%27s_law), Benford's Law "states that in many naturally occurring collections of numbers, the leading significant digit is likely to be small. For example, in sets that obey the law, the number 1 appears as the leading significant digit about 30% of the time, while 9 appears as the leading significant digit less than 5% of the time. If the digits were distributed uniformly, they would each occur about 11.1% of the time."
@@ -41,9 +42,10 @@ ___
 
 ## Directions for Future Work
 - [x] Plot mean deviance over time as the network is trained
-- [ ] Compare different weight initializations
-- [ ] Perform goodness-of-fit distribution tests 
 - [ ] Check if results hold for different architectures/datasets
-- [ ] Investigate using deviation as a measure of network fit
+- [ ] Perform goodness-of-fit distribution tests 
+- [ ] Compare different weight initializations
 - [ ] Return weight statistics before/after training
+- [ ] Investigate using deviation as a measure of network fit
 
+Inspired by [this Reddit thread](https://www.reddit.com/r/learnmachinelearning/comments/ibesos/the_weights_of_my_first_hidden_layer_start_to/).
