@@ -20,7 +20,7 @@ From the [Wikipedia page](https://en.wikipedia.org/wiki/Benford%27s_law), Benfor
 Here's a [great Numberphile video](https://www.youtube.com/watch?v=XXjlR2OK1kM) talking about Benford's Law.
 
 
-## Experimental Results
+## Experiment Details
 I compared the leading weight digit distribution before and after training convergence of a convolutional neural network architecture adapted from the [Keras documentation](https://keras.io/examples/vision/mnist_convnet/). I compared the distributions of weights in just the first layer and all layers in the network for MNIST and Fashion MNIST.
 
 The leading digit was calculated by ignoring the weight sign and taking the first non-zero digit in the weight value.
