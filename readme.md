@@ -9,7 +9,7 @@ It appears that the weights of a network do not follow Benford's Law before trai
 
 A surprising result is that it appears that model Validation Accuracy is maximised around the time when the leading digit MAD vs. Benford's Law is minimized! This has observed with MNIST & Fashion MNIST with several different architectures but needs to be explored on more architectures and datasets.
 
-![Accuracy vs. Benford Weight MAD](https://github.com/alxcnwy/neuralbenford/blob/master/plots/accuracy_vs_mad.png?raw=true)
+![Accuracy vs. Benford Weight MAD](https://github.com/alxcnwy/neuralbenford/blob/master/plots/accuracy_vs_mad.jpg?raw=true)
 
 
 ## Benford's Law
