@@ -22,7 +22,7 @@ I compared the leading weight digit distribution before and after training conve
 
 The leading digit was calculated by ignoring the weight sign and taking the first non-zero digit in the weight value.
 
-### First layer leading digit distribution vs. Benford's Law
+#### First layer leading digiundert distribution vs. Benford's Law
 
 ![Before training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/before_layer1.png?raw=true)
 
@@ -30,7 +30,7 @@ The leading digit was calculated by ignoring the weight sign and taking the firs
 
 ___
 
-### All layers leading digit distribution vs. Benford's Law
+#### All layers leading digit distribution vs. Benford's Law
 
 ![Before training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/before_layers.png?raw=true)
 
