@@ -33,8 +33,10 @@ The leading digit was calculated by ignoring the weight sign and taking the firs
 
 ## Next steps
 - [ ] Plot mean deviance over time as the network is trained
+- [ ] Compare different weight initializations
 - [ ] Perform goodness-of-fit distribution tests 
-- [ ] Evaluate a range of different architectures
-- [ ] Compare different weight initializations 
-- [ ] Investigate using weights vs. Benford distribution deviation as a measure of network fit
+- [ ] Check if results hold for different architectures
+- [ ] Investigate using deviation as a measure of network fit
+- [ ] Return weight statistics before/after training
+- [ ] Generate starting weights that match Benford's Law
 
