@@ -39,12 +39,11 @@ ___
 ![After training](https://github.com/alxcnwy/neuralbenford/blob/master/plots/after_layers.jpg?raw=true)
 
 
-## Next steps
-- [ ] Plot mean deviance over time as the network is trained
+## Directions for Future Work
+- [x] Plot mean deviance over time as the network is trained
 - [ ] Compare different weight initializations
 - [ ] Perform goodness-of-fit distribution tests 
 - [ ] Check if results hold for different architectures/datasets
 - [ ] Investigate using deviation as a measure of network fit
 - [ ] Return weight statistics before/after training
-- [ ] Generate starting weights that match Benford's Law
 
