@@ -1,0 +1,5 @@
+from scipy.stats import rv_discrete
+x=[1,2,3,4,5,6,7,8,9]
+px=[0.301, 0.176, 0.125, 0.097, 0.079, 0.067, 0.058, 0.051, 0.046]
+sample=rv_discrete(values=(x,px)).rvs(size=num_weights)
+sample/=10
