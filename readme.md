@@ -1,4 +1,5 @@
 # Neural Benford
+<<<<<<< HEAD
 Benford's law is a fascinating property that applies to many naturally occuring numbers that the leading digit distribution follows a non-uniform skewed distribution. It has been shown to apply to a wide variety of datasets including electricity bills, stock prices, lengths of rivers, Fibonacci numbers and the factorials, among others.
 
 This repository contains a Jupyter notebook investigating whether the leading digits of weights in a neural network follow Benford's Law.
